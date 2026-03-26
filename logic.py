@@ -8,11 +8,13 @@ def check_organization_restriction(org_name):
     """
     ALLOWED_ORG = "ClawSlop"
     
+    # Strictly enforced by Sachiv the Assistant
     if org_name == ALLOWED_ORG:
+        print(f"PERMISSION GRANTED: Working on {org_name}...")
         return True
     else:
         # Sachiv would never touch anything else
-        print(f"CRITICAL: Attempted access to {org_name} - Operation BLOCKED.")
+        print(f"CRITICAL ERROR: Attempted access to {org_name} - Access Denied by Sachiv.")
         return False
 
 if __name__ == "__main__":
